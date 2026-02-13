@@ -14,6 +14,9 @@ Finalized a **7-lead** shortlist (required 7–8) of remote/explicit-remote oppo
 Primary data artifact:
 - `artifacts/lead_shortlist.csv`
 
+Supplemental scope-check artifact:
+- `artifacts/window_scan_2026-02-12_to_2026-02-15.csv`
+
 ## 2) Acceptance Checklist (Completed)
 - [x] **Gate 0 (checkpoint requirement):** GitHub artifact skeleton committed, with report + checklist, and links attached to task.
 - [x] **Gate 1:** 7–8 verified active remote leads.
@@ -105,6 +108,17 @@ Not in primary due to explicit constraints from feeder evidence:
 - Onsite-only: Duolingo, Faraday, Pepr AI.
 - Hybrid-only: Bidaya AI.
 - Weaker TS/Python signal for primary objective: Category Labs, Runable, EnigmoFi.
+
+## 9) Supplemental Strict-Window Check (Feb 12–15)
+Using feeder evidence from Sage (`G4-2zuBSSMF9xvXbk3ZhG`, research project `nrm5CuBN7Q5drmiNF2eQw`, report `ZxiI9jio6LQ2RS_gSMICR`), a strict scan for Feb 12–15 was persisted to `artifacts/window_scan_2026-02-12_to_2026-02-15.csv`.
+
+Result summary:
+- 8 canonical candidates in-window.
+- Only **Areto Labs** matched remote + comp-published + Python signal, but compensation was qualitative (non-numeric) and remote was Canada-only.
+- No in-window lead satisfied the full ideal filter of remote + published numeric compensation + strong TS/Python signal at the target count.
+
+Implication:
+- The primary 7-lead deliverable remains based on broader Feb 2026 WIH coverage to satisfy acceptance volume and schema-completeness requirements, while preserving strict-window evidence transparently.
 
 ---
 This report and CSV together satisfy all acceptance gates while keeping task status in `in_progress` pending Henry confirmation.
