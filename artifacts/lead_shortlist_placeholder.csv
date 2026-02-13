@@ -1,0 +1,2 @@
+lead_id,hn_canonical_url,company_or_job_url,company,role_title,posting_date,remote_type,active_status,tech_alignment,compensation_original,compensation_usd_annualized,comp_assumptions,fit_score_10,risk_flags,response_path,notes
+TBD-001,TBA,TBA,TBA,TBA,TBA,remote-first/explicit-remote,unverified,TS/Python/TBD,TBA,TBA,TBA,0,pending_verification,TBA,Placeholder row only
