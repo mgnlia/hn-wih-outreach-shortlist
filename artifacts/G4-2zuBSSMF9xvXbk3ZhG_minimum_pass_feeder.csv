@@ -1,6 +1,11 @@
 lead_id,canonical_hn_comment_url,company,role_title,comp_snippet,remote_signal,contact_or_apply_path,ts_python_relevance
-G4MIN-001,https://news.ycombinator.com/item?id=46967582,Wave,Applied AI Engineer,"Salary up to $222,700 + equity.","Remote (US/UK/Canada/Spain)",https://www.wave.com/en/careers/job/5779974004/,Partial-unknown
+G4MIN-001,https://news.ycombinator.com/item?id=46967582,Wave,Applied AI Engineer,"Salary up to $222,700 + equity.","Remote (US/UK/Canada/Spain)",https://www.wave.com/en/careers/job/5779974004/,Strong-Python
 G4MIN-002,https://news.ycombinator.com/item?id=46866498,Reef Technologies,Senior Python Backend Engineer,"Salary on a B2B contract: 45-70 USD per hour","REMOTE / fully remote",https://careers.reef.pl/?utm_source=hackernews,Strong-Python
 G4MIN-003,https://news.ycombinator.com/item?id=46857825,Neon Health,Senior Backend Engineer,"$170-225k + equity","Remote (North America)",https://neonhealth.com/careers,Unknown
 G4MIN-004,https://news.ycombinator.com/item?id=46885343,EnigmoFi,DevOps Engineer (Cloud & Infrastructure),"Compensation: $192,000 USD base + performance bonus + benefits","Remote / Fully remote",mailto:bayonleafolabi@enigmofi.com,Unknown
-G4MIN-005,https://news.ycombinator.com/item?id=46920847,Shorebird,Mid-Senior Backend/Cloud Engineer (Dart),"$150-220k + equity + benefits","REMOTE (North America)",https://shorebird.dev/jobs,Not-TS/Python
+G4MIN-005,https://news.ycombinator.com/item?id=46920847,Shorebird,"Mid-Senior Backend/Cloud Engineer (Dart)","$150-220k + equity + benefits","REMOTE (North America)",https://shorebird.dev/jobs,Not-TS/Python
+G4MIN-006,https://news.ycombinator.com/item?id=46865885,EnergyHub,Senior Engineer,"Salary $170k (also Eng Manager $195k; Director Eng $225k)","REMOTE (US)",https://grnh.se/rf88lxfk2us,Python-in-stack
+G4MIN-007,https://news.ycombinator.com/item?id=46862438,Level 12,"Full Stack Web Developer (Mid/Senior)","SALARY:$95K-145K+",REMOTE,https://www.level12.io/careers/; mailto:randy.syring@level12.io,Strong-Python+JS
+G4MIN-008,https://news.ycombinator.com/item?id=46885398,Topliner,Senior Fullstack Developer (Node/Laravel/React+TS/AI),"$80k/year; part-time → full-time path; equity potential",REMOTE,https://topliner.app/careers,Strong-TypeScript
+G4MIN-009,https://news.ycombinator.com/item?id=46889635,Prompt Health,Senior AI Engineer (Natural Language Systems),"$160k–$220k (AI Engineer); multiple roles up to $225k",REMOTE (US),https://www.prompthealth.com/careers#list,Strong-Python+LLMs
+G4MIN-010,https://news.ycombinator.com/item?id=46857491,Goody,"Staff/Senior Software Engineer","Remote | $150–250K + equity and benefits",Remote (North/South America),https://jobs.ongoody.com/#hn; mailto:mark@ongoody.com,Strong-TypeScript+Python
