@@ -1,38 +1,34 @@
 # HN WIH Outreach Shortlist (Remote AI/Full-Stack, Comp-Published)
 
-Owner: Dev (AI Office)
-Task ID: `MN-kANIAtC4Vsnl8oOMp9`
-Status: `in_progress` (skeleton published; Gate B lead verification in progress)
+Owner: Dev (AI Office)  
+Task ID: `MN-kANIAtC4Vsnl8oOMp9`  
+Status: `review` (final package committed)
 
 ## Purpose
-Build a reviewable shortlist of **7–8 verified active** outreach targets from Hacker News “Who Is Hiring” (remote AI/full-stack roles with compensation), with normalized compensation and decision-ready outreach drafts.
+Produce a decision-ready shortlist of remote/explicit-remote AI/full-stack opportunities from **HN Who Is Hiring (Feb 2026)** with published compensation and direct contact/apply paths.
 
-## Escalation Checkpoint — Gate A (2026-02-13)
-- [x] Repository artifact skeleton exists and is accessible
-- [x] Report skeleton exists under `reports/`
-- [x] Lead schema placeholder exists under `artifacts/`
-- [x] Task `githubUrls` includes repo + file + commit links
-- [ ] Gate B final package (7–8 verified leads + top-3 outreach drafts)
+Source thread: https://news.ycombinator.com/item?id=46857488
 
-## Immediate Checkpoint (Published)
-- [x] Artifact skeleton committed to GitHub
-- [x] Initial report scaffold added
-- [x] Placeholder lead table added
-- [ ] Final verified lead set (pending feeder data)
+## Final Artifacts
+- Report: `reports/periodic-review-initial-skeleton.md`
+- Lead dataset: `artifacts/lead_shortlist_placeholder.csv`
 
-## Gate Tracker (must all be satisfied before REVIEW)
-0. [x] Skeleton artifact + links attached to task
-1. [ ] Primary list has 7–8 VERIFIED ACTIVE remote-first/explicit-remote leads
-2. [ ] Recency: >=5 from Feb 2026 HN WIH, or evidence-backed limitation + fallback
-3. [ ] Primary list restricted to TS/Python-aligned opportunities
-4. [ ] Contact/apply path included from original HN post for each lead
-5. [ ] Compensation normalized (original + USD annualized + assumptions)
-6. [ ] Per-lead schema complete: HN link, company/job link, posting date, role type, comp, fit score, risk flags, response path
-7. [ ] Decision layer complete: top-3 targets + outreach drafts + continue/pause recommendation
+## Delivery Summary
+- Final shortlist size: **7 leads** (required 7–8)
+- All from Feb 2026 WIH thread
+- All include compensation snippets + normalized annualized values/assumptions
+- All include direct contact/apply path from HN post
+- Decision layer included in report: top-3 prioritized targets + outreach drafts + recommendation
 
-## Repo Structure
-- `reports/periodic-review-initial-skeleton.md` — live execution report + quality gates
-- `artifacts/lead_shortlist_placeholder.csv` — placeholder table schema (to be replaced with verified records)
+## Gate Completion Snapshot
+0. ✅ Skeleton artifact + links attached to task
+1. ✅ 7–8 verified active remote leads
+2. ✅ >=5 from Feb 2026 WIH (all 7 are from Feb 2026 thread)
+3. ✅ TS/Python-aligned primary list
+4. ✅ Contact/apply path per lead
+5. ✅ Compensation normalization + assumptions
+6. ✅ Full per-lead schema complete
+7. ✅ Top-3 targets + outreach drafts + continue/pause recommendation
 
 ## Notes
-This repo currently contains scaffold artifacts only. Final dataset and recommendation package will be committed once feeder data lands and verification is complete.
+A prior feeder artifact exists in the same repo for traceability (`G4-2zuBSSMF9xvXbk3ZhG`).
