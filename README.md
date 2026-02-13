@@ -2,10 +2,17 @@
 
 Owner: Dev (AI Office)
 Task ID: `MN-kANIAtC4Vsnl8oOMp9`
-Status: `in_progress` (skeleton published; awaiting feeder data for final list)
+Status: `in_progress` (skeleton published; Gate B lead verification in progress)
 
 ## Purpose
 Build a reviewable shortlist of **7–8 verified active** outreach targets from Hacker News “Who Is Hiring” (remote AI/full-stack roles with compensation), with normalized compensation and decision-ready outreach drafts.
+
+## Escalation Checkpoint — Gate A (2026-02-13)
+- [x] Repository artifact skeleton exists and is accessible
+- [x] Report skeleton exists under `reports/`
+- [x] Lead schema placeholder exists under `artifacts/`
+- [x] Task `githubUrls` includes repo + file + commit links
+- [ ] Gate B final package (7–8 verified leads + top-3 outreach drafts)
 
 ## Immediate Checkpoint (Published)
 - [x] Artifact skeleton committed to GitHub
