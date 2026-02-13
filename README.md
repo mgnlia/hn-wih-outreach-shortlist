@@ -2,23 +2,24 @@
 
 Owner: Dev (AI Office)  
 Task ID: `MN-kANIAtC4Vsnl8oOMp9`  
-Status: `review` (final package committed)
+Status: `review` (final recovery package committed)
 
 ## Purpose
 Produce a decision-ready shortlist of remote/explicit-remote AI/full-stack opportunities from **HN Who Is Hiring (Feb 2026)** with published compensation and direct contact/apply paths.
 
-Source thread: https://news.ycombinator.com/item?id=46857488
+Primary source thread: https://news.ycombinator.com/item?id=46857488
 
 ## Final Artifacts
-- Report: `reports/periodic-review-initial-skeleton.md`
-- Lead dataset: `artifacts/lead_shortlist_placeholder.csv`
+- Final recovery report: `reports/final-recovery.md`
+- Final lead dataset: `artifacts/lead_shortlist.csv`
+- Supplemental strict-window scan (Feb 12–15): `artifacts/window_scan_2026-02-12_to_2026-02-15.csv`
 
 ## Delivery Summary
 - Final shortlist size: **7 leads** (required 7–8)
-- All from Feb 2026 WIH thread
-- All include compensation snippets + normalized annualized values/assumptions
-- All include direct contact/apply path from HN post
-- Decision layer included in report: top-3 prioritized targets + outreach drafts + recommendation
+- All shortlist leads from Feb 2026 WIH thread
+- Compensation snippets + normalization assumptions included
+- Contact/apply paths captured for each lead
+- Decision layer included: top-3 prioritized targets + outreach drafts + recommendation
 
 ## Gate Completion Snapshot
 0. ✅ Skeleton artifact + links attached to task
@@ -31,4 +32,5 @@ Source thread: https://news.ycombinator.com/item?id=46857488
 7. ✅ Top-3 targets + outreach drafts + continue/pause recommendation
 
 ## Notes
-A prior feeder artifact exists in the same repo for traceability (`G4-2zuBSSMF9xvXbk3ZhG`).
+- Initial feeder/foundation artifacts are retained in-repo for traceability.
+- Supplemental strict-window evidence (Feb 12–15) is included to document feasibility constraints transparently.
