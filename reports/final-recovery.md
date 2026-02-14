@@ -153,12 +153,16 @@ Execution sequence:
 ## 12) Feeder Merge Confirmation (Dependency G4-2zuBSSMF9xvXbk3ZhG)
 Dependency feeder is available with committed evidence and has been incorporated in final QA cross-check.
 
+Feeder artifacts and commits:
 - Feeder evidence file: `reports/G4-2zuBSSMF9xvXbk3ZhG-feeder-evidence.md`
-- Feeder commit: `2a1bdf6a15e78bc461ec58a362219216002ad611`
-- Feeder commit URL: https://github.com/mgnlia/hn-wih-outreach-shortlist/commit/2a1bdf6a15e78bc461ec58a362219216002ad611
+- Expanded feeder CSV: `artifacts/G4-2zuBSSMF9xvXbk3ZhG_minimum_pass_feeder.csv`
+- Base feeder commit: `2a1bdf6a15e78bc461ec58a362219216002ad611`
+- Expanded feeder markdown commit: `a3e0bf7d2b3f91665fb9a875d5039775b8883421`
+- Expanded feeder CSV commit: `4da4190e850a18fd275b8be071988e3498b226c6`
 
 Integration notes:
 - Canonical HN links, compensation snippets, remote signals, contact/apply paths, and TS/Python hints were reconciled against primary shortlist rows.
+- Expanded feeder coverage (including EnergyHub, Level 12, Topliner, Prompt Health, and Goody) was reviewed; final primary shortlist remains policy-constrained to 7 fully gate-compliant rows.
 - Final shortlist retains only leads that satisfy current gate policy (active, remote signal, compensation normalization feasibility, and TS/Python relevance).
 
 ---
