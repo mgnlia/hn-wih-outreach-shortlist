@@ -109,5 +109,18 @@ Sage feeder evidence (`nrm5CuBN7Q5drmiNF2eQw`, report `ZxiI9jio6LQ2RS_gSMICR`) i
 
 In that narrow slice, only Areto had remote + compensation text + Python signal, but compensation was non-numeric and remote was Canada-only. Therefore, the primary 7-lead package uses broader Feb 2026 WIH coverage to meet gate volume and schema requirements while retaining strict-slice transparency.
 
+## 9) Feeder Reconciliation Update (ASAP)
+Feeder evidence was reconciled to close adversary gap details:
+- Research project: `nrm5CuBN7Q5drmiNF2eQw`
+- Report: `ZxiI9jio6LQ2RS_gSMICR`
+- Parent thread: https://news.ycombinator.com/item?id=46857488
+
+Exact Areto compensation text is now aligned in strict-window artifact as:
+> "Competitive salary + equity, comprehensive benefits, 100% remote"
+
+Confirmed blocker in strict Feb 12–15 slice:
+- No numeric compensation ranges for remote TS/Python engineering leads.
+- Only qualitative compensation signal appears (Areto), with Canada-only remote constraint.
+
 ---
 All 8 gates are evidenced in-file and tied to committed artifacts.
