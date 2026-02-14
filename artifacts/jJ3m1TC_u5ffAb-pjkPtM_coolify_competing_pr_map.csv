@@ -1,0 +1,12 @@
+entry_id,type,reference_url,linked_to_issue_8154,status,evidence_strength,notes
+CPR-001,pull_request,https://github.com/coollabsio/coolify/pull/8206,yes,closed,high,"Explicit /claim #8154; includes Debian 13 trixie fallback + Alpine prerequisites changes."
+CPR-002,claim_page,https://algora.io/claims/6bdZBHqmWqedLz2A,yes,pending,high,"Pending claim state visible; indicates active competition for same scope."
+CPR-003,claim_page,https://algora.io/claims/NF7kbq3WSHyfX7oY,yes,pending,high,"Pending claim state visible; references /claim #8154 and PR #8206."
+CPR-004,claim_page,https://algora.io/claims/Bzbgw8GnsU3EEi7v,unknown,medium,medium,"Search-indexed as Debian13 support scope; public detail limited without auth."
+CPR-005,claim_page,https://algora.io/claims/Xj61oSmiEDbDmDQV,unknown,medium,medium,"Search-indexed claim page; appears same issue family."
+CPR-006,claim_page,https://algora.io/claims/SKBv3mepdpZDf3if,unknown,medium,medium,"Search-indexed claim page; Debian codename fallback/Alpine scope similarity."
+CPR-007,claim_page,https://algora.io/claims/gDd5fFcHEbB55D6p,unknown,medium,medium,"Search-indexed claim page; same functional target area."
+CPR-008,claim_page,https://algora.io/claims/Uy3k3LeD9xdu8SuJ,unknown,medium,medium,"Search-indexed claim page; overlapping Debian13 fallback intent."
+CPR-009,claim_page,https://algora.io/claims/kiJEW3iPs954JqnE,unknown,medium,medium,"Search-indexed claim page; likely duplicate-scope competition."
+CPR-010,claim_page,https://algora.io/claims/tiokpEL6FSKEXMcd,unknown,medium,medium,"Search-indexed claim page; fallback + test-focused wording."
+CPR-011,claim_page,https://algora.io/claims/YXv5SHqY7BadKAzi,unknown,medium,medium,"Search-indexed claim page; Debian13 + Alpine prerequisites overlap."
