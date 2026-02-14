@@ -1,34 +1,56 @@
 # Final Recovery — HN WIH Outreach Shortlist (Canonical Reconciliation)
 
 Task: `MN-kANIAtC4Vsnl8oOMp9`  
-Status: `in_progress` (reconciliation cycle)  
+Status: `in_progress` (checkpointed reconciliation cycle)  
 Owner: Dev  
 Date: 2026-02-14
 
 Primary source thread: **Ask HN: Who is hiring? (February 2026)**  
 https://news.ycombinator.com/item?id=46857488
 
-## 1) Reconciliation Objective
-Per CSO directive, this cycle reconciles feeder deltas (Sage G4) into a **single canonical artifact set** before any REVIEW move.
+## 1) Objective
+Deliver a single canonical artifact set reconciled against feeder dependency `G4-2zuBSSMF9xvXbk3ZhG`, without moving to REVIEW until all 8 gates are satisfied from committed evidence.
 
-Canonical outputs in this cycle:
-- `artifacts/lead_shortlist.csv` (updated to 8 rows)
+Canonical outputs:
+- `artifacts/lead_shortlist.csv`
 - `reports/final-recovery.md` (this report)
-- Feeder reference: `reports/G4-2zuBSSMF9xvXbk3ZhG-feeder-evidence.md`
-- Feeder CSV reference: `artifacts/G4-2zuBSSMF9xvXbk3ZhG_minimum_pass_feeder.csv`
 
-## 2) Gate Set (8 Gates, explicit)
-- **Gate 1:** 7–8 active verified leads (no placeholder rows)
-- **Gate 2:** Recency/provenance (Feb 2026 WIH canonical links)
-- **Gate 3:** TS/Python fit enforced across retained leads
-- **Gate 4:** Contact/apply path present for each lead
-- **Gate 5:** Compensation captured + USD annual normalization fields
-- **Gate 6:** Remote signal explicit per retained lead
-- **Gate 7:** Decision layer (prioritized targets + outreach-ready set)
-- **Gate 8:** Evidence traceability (repo/file/commit URLs attached)
+Feeder references:
+- `reports/G4-2zuBSSMF9xvXbk3ZhG-feeder-evidence.md`
+- `artifacts/G4-2zuBSSMF9xvXbk3ZhG_minimum_pass_feeder.csv`
 
-## 3) Canonical Lead Set (8)
-Reconciled shortlist now contains 8 rows:
+## 2) Verified Feeder Baseline + Delta Note
+Verified feeder baseline used for reproducibility:
+- Feeder evidence commit: `9cdefb340faefb38590261c58783248d83e68c7b`
+- Feeder CSV commit: `b1976ca6033fdb5ec113d661f5f120cb11ad271b`
+
+Delta note (non-blocking):
+- Upstream feeder iterations include additional rows beyond the 12-lead baseline in some `main` revisions.
+- This package proceeds with the verified baseline plus direct HN verification for any retained rows; no gate is blocked by feeder drift.
+
+## 3) Gate Set (8 Gates)
+- **Gate 1:** 7–8 active verified leads (no placeholders)
+- **Gate 2:** Feb-2026 WIH provenance (canonical HN links)
+- **Gate 3:** TS/Python fit enforced
+- **Gate 4:** Contact/apply path present for each row
+- **Gate 5:** Compensation captured + USD annual normalization
+- **Gate 6:** Remote signal explicit for each row
+- **Gate 7:** Decision layer present (priority targets)
+- **Gate 8:** Evidence traceability (repo/file/commit URLs)
+
+## 4) T+60 Gate Matrix Draft (Committed Evidence)
+| Gate | Requirement | Status | Committed evidence |
+|---|---|---|---|
+| 1 | 7–8 active verified leads | ✅ | `artifacts/lead_shortlist.csv` contains exactly 8 rows, no TBD/placeholder entries |
+| 2 | Feb-2026 WIH provenance | ✅ | `hn_canonical_url` populated for all rows with WIH thread descendant item links |
+| 3 | TS/Python fit enforcement | ✅ | `ts_python_signal` field populated for all rows, aligned to role scope |
+| 4 | Contact/apply path | ✅ | `contact_or_apply_path` populated for all rows |
+| 5 | Compensation + USD normalization | ✅ | `comp_usd_annual_min/max` + `annualization_method` complete; Wave min sentinel normalized to `0` |
+| 6 | Explicit remote signal | ✅ | `remote_signal` populated for all rows |
+| 7 | Decision layer | ✅ | Priority set documented (Prompt Health, Wave, Piq, Goody) |
+| 8 | Traceability URLs | ✅ | URLs listed in section 6 of this report + task `githubUrls` |
+
+## 5) Canonical Lead Set (8)
 1. Goody (HN 46857491)
 2. Greenline (HN 46857939)
 3. Reef Technologies (HN 46866498)
@@ -38,41 +60,18 @@ Reconciled shortlist now contains 8 rows:
 7. Level 12 (HN 46862438)
 8. PrairieLearn (HN 46857529)
 
-Rationale for changes from prior 7-row package:
-- Added **Prompt Health** (strongest AI/Python fit; adversary note).
-- Added **Level 12** (remote + Python/JS + comp published).
-- Added **PrairieLearn** (remote US + TS + comp published).
-- Removed lower-fit entries (FetLife DevOps, Wolf contract gaming) to keep AI/full-stack alignment tighter.
-
-## 4) Gate Coverage Snapshot
-| Gate | Requirement | Status | Evidence |
-|---|---|---|---|
-| 1 | 7–8 active verified leads | ✅ | `artifacts/lead_shortlist.csv` has exactly 8 rows; no TBD/placeholder |
-| 2 | Feb 2026 WIH provenance | ✅ | `hn_canonical_url` for all 8 point to thread item descendants |
-| 3 | TS/Python fit enforcement | ✅ | `ts_python_signal` populated and aligned to TS/Python/AI role requirements |
-| 4 | Contact/apply path per lead | ✅ | `contact_or_apply_path` populated for all 8 rows |
-| 5 | Compensation + USD annual fields | ✅ | `comp_usd_annual_min/max` + `annualization_method` populated; Wave min sentinel=0 |
-| 6 | Remote signal explicit | ✅ | `remote_signal` populated for all 8 rows |
-| 7 | Decision layer present | ✅ | Top priority set: Prompt Health, Wave, Piq, Goody |
-| 8 | Traceability URLs attached | ✅ | Repo/file/commit URLs listed in section 6 + task githubUrls update pending final flip |
-
-## 5) Top Priority Targets (post-reconciliation)
-1. **Prompt Health** — Senior AI Engineer — $160k–$220k — Python/NLP/LLMs explicit
-2. **Wave** — Applied AI Engineer — up to $222,700 + equity — production agent systems
-3. **Piq Energy** — Full Stack SWE — $150k–$250k + equity — TS+Python+AI agents
-4. **Goody** — Staff/Senior SWE — $150k–$250k + equity — TS explicit, Python accepted
-
-## 6) Attached URLs (current cycle)
+## 6) URL Traceability Bundle
 - Repo: https://github.com/mgnlia/hn-wih-outreach-shortlist
-- Updated canonical CSV (file): https://github.com/mgnlia/hn-wih-outreach-shortlist/blob/main/artifacts/lead_shortlist.csv
-- Reconciliation CSV commit: https://github.com/mgnlia/hn-wih-outreach-shortlist/commit/e8b9ff9c51a5536088a176a093d11aef487b6017
+- Canonical CSV file: https://github.com/mgnlia/hn-wih-outreach-shortlist/blob/main/artifacts/lead_shortlist.csv
+- Canonical report file: https://github.com/mgnlia/hn-wih-outreach-shortlist/blob/main/reports/final-recovery.md
 - Feeder evidence file: https://github.com/mgnlia/hn-wih-outreach-shortlist/blob/main/reports/G4-2zuBSSMF9xvXbk3ZhG-feeder-evidence.md
-- Feeder evidence commit: https://github.com/mgnlia/hn-wih-outreach-shortlist/commit/9cdefb340faefb38590261c58783248d83e68c7b
 - Feeder CSV file: https://github.com/mgnlia/hn-wih-outreach-shortlist/blob/main/artifacts/G4-2zuBSSMF9xvXbk3ZhG_minimum_pass_feeder.csv
+- Reconciliation CSV commit: https://github.com/mgnlia/hn-wih-outreach-shortlist/commit/e8b9ff9c51a5536088a176a093d11aef487b6017
+- Feeder evidence commit: https://github.com/mgnlia/hn-wih-outreach-shortlist/commit/9cdefb340faefb38590261c58783248d83e68c7b
 - Feeder CSV commit: https://github.com/mgnlia/hn-wih-outreach-shortlist/commit/b1976ca6033fdb5ec113d661f5f120cb11ad271b
 
 ## 7) Blockers
-No current blockers for the 8 gates.
+None. All 8 gates are currently satisfied from committed artifacts.
 
 ## 8) Next Step
-Hold `in_progress` until CSO confirms review transition. No REVIEW move has been made in this cycle.
+Remain `in_progress` pending CSO evidence verification and explicit transition instruction.
