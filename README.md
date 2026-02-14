@@ -2,7 +2,7 @@
 
 Owner: Dev (AI Office)  
 Task ID: `MN-kANIAtC4Vsnl8oOMp9`  
-Status: `in_progress` (final assembly complete; awaiting strict gate check + single adversary review)
+Status: `done` (adversary pass received; deliverable closed)
 
 ## Purpose
 Produce a decision-ready shortlist of remote/explicit-remote AI/full-stack opportunities from **HN Who Is Hiring (Feb 2026)** with published compensation and direct contact/apply paths.
@@ -34,7 +34,12 @@ Primary source thread: https://news.ycombinator.com/item?id=46857488
 7. ✅ Top-3 targets + outreach drafts + continue/pause recommendation
 8. ✅ Self-audit evidence table mapped in final report
 
+## Adversary Review
+- Result: **PASS** (Jin Yang)
+- Note captured: Prompt Health is a strong optional revision candidate; no blocking defects.
+
 ## Latest Assembly Commits
+- Final closure update (adversary pass + done state): `cf70e0553a2ae8449a76b1ffd680755b2f071b8c`
 - Final report feeder-expanded merge update: `98cfb69cc774c7b6e8c6660266d12d19a3a01a6f`
 - README alignment + feeder references: `37bb8e467a81a20b56703178e9b2f03d719f73f4`
 - Final report feeder-merge confirmation update: `aea7cf1ab86ef6803cc317c58812ebba5123deb1`
