@@ -1,4 +1,4 @@
-# Final Recovery — HN WIH Outreach Shortlist (8-Gate Complete)
+# Final Recovery — HN WIH Outreach Shortlist (9-Gate Complete)
 
 Task: `MN-kANIAtC4Vsnl8oOMp9`  
 Status: `in_progress`  
@@ -18,53 +18,66 @@ Primary artifacts:
 Supplemental feasibility artifact:
 - `artifacts/window_scan_2026-02-12_to_2026-02-15.csv`
 
-## 2) Self-Audit Checklist (All Gates)
-- [x] **Gate 0:** Artifact-first skeleton committed; repo/file/commit links attached in task `githubUrls`.
-- [x] **Gate 1:** 7–8 verified active remote leads present (exactly 7), with explicit recency handling.
-- [x] **Gate 2:** >=5 leads sourced from Feb 2026 WIH thread.
-- [x] **Gate 3:** TS/Python fit enforcement applied to every retained lead.
-- [x] **Gate 4:** Contact/apply path captured from original HN post for each lead.
-- [x] **Gate 5:** Compensation normalized to USD annualized fields with assumptions documented.
-- [x] **Gate 6:** Full per-lead schema complete in CSV.
-- [x] **Gate 7:** Decision layer complete: Top-3 + outreach drafts + continue/pause recommendation.
+## 2) Gate Definitions (Current Cycle: 9 Gates)
+- **Gate 0:** Artifact-first skeleton committed with repo/file/commit links in task.
+- **Gate 1:** 7–8 verified active leads.
+- **Gate 2:** Recency handling/validation documented and evidenced.
+- **Gate 3:** Feb 2026 WIH provenance (>=5 leads).
+- **Gate 4:** TS/Python fit enforcement.
+- **Gate 5:** Contact/apply path captured for each lead.
+- **Gate 6:** Compensation normalization to USD annual fields with assumptions.
+- **Gate 7:** Decision layer complete (Top-3 + outreach drafts + continue/pause recommendation).
+- **Gate 8:** Self-audit table mapping each gate to exact evidence location.
 
-## 3) Gate-to-Evidence Mapping (Periodic Quality Gate Closure)
-| Gate | Requirement | Status | Evidence pointer |
+## 3) Self-Audit Checklist (All Gates)
+- [x] Gate 0 complete
+- [x] Gate 1 complete
+- [x] Gate 2 complete
+- [x] Gate 3 complete
+- [x] Gate 4 complete
+- [x] Gate 5 complete
+- [x] Gate 6 complete
+- [x] Gate 7 complete
+- [x] Gate 8 complete
+
+## 4) Self-Audit Table — Gate → Evidence Location
+| Gate | Requirement | Status | Evidence location |
 |---|---|---|---|
-| 0 | Artifact-first checkpoint links | ✅ | Skeleton commits: `6fefec2` (report), `42f6214` (CSV), plus task `githubUrls` |
-| 1 | 7–8 active verified leads + recency handling | ✅ | `artifacts/lead_shortlist.csv` rows `HN-WIH-2026-001`..`007`; `posting_date_utc` + `active_status` fields |
-| 2 | Feb 2026 WIH provenance (>=5) | ✅ | All 7 `hn_canonical_url` values are Feb 2026 WIH comments |
-| 3 | TS/Python enforcement | ✅ | `ts_python_signal` populated on all 7 rows; see Section 4 enforcement matrix |
-| 4 | Contact/apply path per lead | ✅ | `contact_or_apply_path` populated on all 7 rows |
-| 5 | USD normalization + assumptions | ✅ | `comp_usd_annual_min`, `comp_usd_annual_max`, `annualization_method` complete |
-| 6 | Full schema completeness | ✅ | Required columns complete including `risk_flags`, `fit_score_10`, `notes` |
-| 7 | Top-3 + drafts + recommendation | ✅ | Sections 6, 7, and 8 in this report |
+| 0 | Artifact-first checkpoint links | ✅ | Task `githubUrls`; skeleton commits `6fefec2` (report), `42f6214` (CSV) |
+| 1 | 7–8 active verified leads | ✅ | `artifacts/lead_shortlist.csv` rows `HN-WIH-2026-001`..`007`; `active_status` column |
+| 2 | Recency validation | ✅ | `artifacts/lead_shortlist.csv` `posting_date_utc` (2026-02-02..2026-02-11); Section 5.1 in this report |
+| 3 | Feb 2026 WIH provenance >=5 | ✅ | `artifacts/lead_shortlist.csv` `hn_canonical_url` on all 7 rows (all Feb WIH thread) |
+| 4 | TS/Python fit enforcement | ✅ | `artifacts/lead_shortlist.csv` `ts_python_signal`; Section 5.2 enforcement map |
+| 5 | Contact/apply path per lead | ✅ | `artifacts/lead_shortlist.csv` `contact_or_apply_path` complete on all rows |
+| 6 | USD compensation normalization | ✅ | `artifacts/lead_shortlist.csv` `comp_usd_annual_min/max` + `annualization_method` |
+| 7 | Top-3 + drafts + recommendation | ✅ | Sections 7, 8, 9 in this report |
+| 8 | In-file gate mapping table | ✅ | Section 4 (this table) |
 
-## 4) Recency Handling + TS/Python Enforcement
-### 4.1 Recency policy
+## 5) Enforcement Notes
+### 5.1 Recency handling
 Inclusion policy for primary shortlist:
 1. Lead must be from Feb 2026 WIH thread context.
-2. Lead must be active at capture time (`active_status` includes live post/page signal).
-3. Lead must be recent within the cycle window (posting dates in this shortlist are **2026-02-02 to 2026-02-11**).
+2. Lead must be active at capture time (`active_status` indicates live post/page signal).
+3. Lead must be recent in-cycle.
 
-Recency evidence (from `posting_date_utc` in `lead_shortlist.csv`):
+Recency evidence from CSV:
 - 2026-02-02: HN-WIH-2026-001, 002, 003, 005
 - 2026-02-03: HN-WIH-2026-004, 006
 - 2026-02-11: HN-WIH-2026-007
 
-### 4.2 TS/Python fit enforcement
-Enforcement rule: every retained lead must have explicit TypeScript and/or Python signal in role/stack text. Generic full-stack leads without TS/Python signal were excluded from the primary shortlist.
+### 5.2 TS/Python fit enforcement
+Rule: each retained lead must include explicit TypeScript and/or Python signal.
 
 Per-lead enforcement map:
-- HN-WIH-2026-001 (Goody): **TypeScript explicit; Python accepted backend**
-- HN-WIH-2026-002 (FetLife): **TypeScript present in stack context** (infra role; risk-flagged)
-- HN-WIH-2026-003 (Greenline): **TypeScript explicit**
-- HN-WIH-2026-004 (Reef): **Python explicit**
-- HN-WIH-2026-005 (Piq): **TypeScript + Python explicit**
-- HN-WIH-2026-006 (Wolf): **TypeScript explicit**
-- HN-WIH-2026-007 (Wave): **Python explicit; TypeScript in stack context**
+- HN-WIH-2026-001 (Goody): TypeScript explicit; Python accepted backend
+- HN-WIH-2026-002 (FetLife): TypeScript in stack context (infra role)
+- HN-WIH-2026-003 (Greenline): TypeScript explicit
+- HN-WIH-2026-004 (Reef): Python explicit
+- HN-WIH-2026-005 (Piq): TypeScript + Python explicit
+- HN-WIH-2026-006 (Wolf): TypeScript explicit
+- HN-WIH-2026-007 (Wave): Python explicit; TypeScript in stack context
 
-## 5) Final Primary Shortlist (7)
+## 6) Final Primary Shortlist (7)
 1. **Goody** — Staff/Senior SWE — Remote Americas — TS explicit, Python accepted — $150k–$250k.
 2. **FetLife** — Senior DevOps Engineer — Remote — TS in stack context — $115k–$180k.
 3. **Greenline** — Founding Engineer (Backend+Data) — Remote US — TypeScript monorepo — $175k–$225k.
@@ -73,7 +86,7 @@ Per-lead enforcement map:
 6. **Wolf Games** — Software Engineer (AI Web Game) — Fully remote US — TS — $45–55/hr annualized to $93.6k–$114.4k.
 7. **Wave** — Applied AI Engineer — Remote with country hubs — Python backend + TS frontend stack — up to $222,700.
 
-## 6) Top-3 Prioritized Targets
+## 7) Top-3 Prioritized Targets
 ### #1 Wave — Applied AI Engineer
 - Direct AI-agent relevance and production-scale interaction footprint.
 - Strong Python backend fit.
@@ -89,7 +102,7 @@ Per-lead enforcement map:
 - Multiple openings + direct leadership contact path.
 - High salary band.
 
-## 7) Outreach Drafts (Top-3)
+## 8) Outreach Drafts (Top-3)
 ### Draft A — Wave
 Subject: Applied AI Engineer (HN Feb WIH) — Python + agent systems
 
@@ -120,7 +133,7 @@ Happy to share concise examples of recent TS/Python systems and outcomes.
 Best,  
 [Name]
 
-## 8) Recommendation
+## 9) Recommendation
 **Recommendation: CONTINUE**
 
 Execution plan:
@@ -128,19 +141,10 @@ Execution plan:
 2. Submit Greenline and Reef as near-parallel alternates.
 3. Keep FetLife/Wolf as conditional options depending on role preference (DevOps and contract-to-hire).
 
-## 9) Feasibility Note — Strict 12–15 Feb Slice
+## 10) Feasibility Note — Strict 12–15 Feb Slice
 Sage feeder evidence (`nrm5CuBN7Q5drmiNF2eQw`, report `ZxiI9jio6LQ2RS_gSMICR`) is persisted in `artifacts/window_scan_2026-02-12_to_2026-02-15.csv`.
 
 In that narrow slice, only Areto had remote + compensation text + Python signal, but compensation was non-numeric and remote was Canada-only. Therefore, the primary 7-lead package uses broader Feb 2026 WIH coverage to meet gate volume and schema requirements while retaining strict-slice transparency.
 
-## 10) Feeder Reconciliation Update
-Feeder evidence reconciled in latest cycle:
-- Research project: `nrm5CuBN7Q5drmiNF2eQw`
-- Report: `ZxiI9jio6LQ2RS_gSMICR`
-- Parent thread: https://news.ycombinator.com/item?id=46857488
-
-Exact Areto compensation text now aligned in strict-window artifact:
-> "Competitive salary + equity, comprehensive benefits, 100% remote"
-
 ---
-All quality gates required for periodic review are mapped to concrete evidence in this report and linked artifacts.
+All 9 gates are evidenced in-file and linked to committed artifacts. Status intentionally remains `in_progress` pending explicit instruction to move `review`.
