@@ -150,6 +150,17 @@ Execution sequence:
 - **Consequence:** strict-window-only package would fail gate volume + normalization strictness.
 - **Mitigation:** retain strict-window artifact for transparency and use broader Feb WIH fallback for final compliant package.
 
+## 12) Feeder Merge Confirmation (Dependency G4-2zuBSSMF9xvXbk3ZhG)
+Dependency feeder is available with committed evidence and has been incorporated in final QA cross-check.
+
+- Feeder evidence file: `reports/G4-2zuBSSMF9xvXbk3ZhG-feeder-evidence.md`
+- Feeder commit: `2a1bdf6a15e78bc461ec58a362219216002ad611`
+- Feeder commit URL: https://github.com/mgnlia/hn-wih-outreach-shortlist/commit/2a1bdf6a15e78bc461ec58a362219216002ad611
+
+Integration notes:
+- Canonical HN links, compensation snippets, remote signals, contact/apply paths, and TS/Python hints were reconciled against primary shortlist rows.
+- Final shortlist retains only leads that satisfy current gate policy (active, remote signal, compensation normalization feasibility, and TS/Python relevance).
+
 ---
 Final package is fully populated (no placeholders), with all 9 gates evidenced and cross-referenced.
-Status intentionally remains `in_progress` until explicit approval to move `review`.
+Status intentionally remains `in_progress` pending strict gate check and single adversary review request.
