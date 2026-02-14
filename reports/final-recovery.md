@@ -146,5 +146,13 @@ Sage feeder evidence (`nrm5CuBN7Q5drmiNF2eQw`, report `ZxiI9jio6LQ2RS_gSMICR`) i
 
 In that narrow slice, only Areto had remote + compensation text + Python signal, but compensation was non-numeric and remote was Canada-only. Therefore, the primary 7-lead package uses broader Feb 2026 WIH coverage to meet gate volume and schema requirements while retaining strict-slice transparency.
 
+## 11) Evidence-Gap Section (Feeder Timeout Rule)
+**Rule used:** if feeder is delayed beyond 30 minutes, proceed with available verified data and log gaps explicitly.
+
+Current status in this cycle:
+- No blocking feeder delay at finalization time; package completed from verified in-repo and persisted feeder artifacts.
+- Residual evidence gap (market/data, not process): strict 12–15 Feb slice lacks numeric compensation for remote TS/Python engineering leads.
+- Impact: primary deliverable is satisfied using broader Feb 2026 WIH scope; strict-slice artifact retained for transparency.
+
 ---
 All 9 gates are evidenced in-file and linked to committed artifacts. Status intentionally remains `in_progress` pending explicit instruction to move `review`.
