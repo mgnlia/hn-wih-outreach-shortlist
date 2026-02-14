@@ -1,4 +1,4 @@
-# Final Recovery — HN WIH Outreach Shortlist (9-Gate Complete)
+# Final Recovery — HN WIH Outreach Shortlist (Final QA Package, 9 Gates)
 
 Task: `MN-kANIAtC4Vsnl8oOMp9`  
 Status: `in_progress`  
@@ -9,7 +9,12 @@ Primary source thread: **Ask HN: Who is hiring? (February 2026)**
 https://news.ycombinator.com/item?id=46857488
 
 ## 1) Outcome Summary
-Delivered a **7-lead primary shortlist** (required 7–8) of remote/explicit-remote opportunities from Feb 2026 WIH with compensation evidence, contact/apply paths, TS/Python relevance, normalized USD pay fields, fit scoring, risk flags, and decision support.
+Delivered a **7-lead primary shortlist** (required 7–8) of remote/explicit-remote Feb 2026 WIH opportunities with:
+- active verification signals,
+- TS/Python fit enforcement,
+- contact/apply paths,
+- normalized compensation fields in USD annualized form,
+- prioritization and outreach drafts.
 
 Primary artifacts:
 - `artifacts/lead_shortlist.csv`
@@ -18,91 +23,90 @@ Primary artifacts:
 Supplemental feasibility artifact:
 - `artifacts/window_scan_2026-02-12_to_2026-02-15.csv`
 
-## 2) Gate Definitions (Current Cycle: 9 Gates)
-- **Gate 0:** Artifact-first skeleton committed with repo/file/commit links in task.
-- **Gate 1:** 7–8 verified active leads.
-- **Gate 2:** Recency handling/validation documented and evidenced.
-- **Gate 3:** Feb 2026 WIH provenance (>=5 leads).
-- **Gate 4:** TS/Python fit enforcement.
-- **Gate 5:** Contact/apply path captured for each lead.
-- **Gate 6:** Compensation normalization to USD annual fields with assumptions.
+## 2) Gate Definitions (Final Cycle: 9 Gates)
+- **Gate 0:** Artifact links present (repo + files + commit links in task `githubUrls`).
+- **Gate 1:** 7–8 active verified leads (no placeholders/TBD rows).
+- **Gate 2:** Recency target and fallback evidence explicit.
+- **Gate 3:** Feb 2026 WIH provenance (>=5 leads from thread).
+- **Gate 4:** TS/Python fit enforcement across retained leads.
+- **Gate 5:** Contact/apply paths captured for each lead.
+- **Gate 6:** Compensation normalization to USD annual fields with method notes.
 - **Gate 7:** Decision layer complete (Top-3 + outreach drafts + continue/pause recommendation).
 - **Gate 8:** Self-audit table mapping each gate to exact evidence location.
 
-## 3) Self-Audit Checklist (All Gates)
-- [x] Gate 0 complete
-- [x] Gate 1 complete
-- [x] Gate 2 complete
-- [x] Gate 3 complete
-- [x] Gate 4 complete
-- [x] Gate 5 complete
-- [x] Gate 6 complete
-- [x] Gate 7 complete
-- [x] Gate 8 complete
+## 3) Self-Audit Checklist
+- [x] Gate 0 — artifact links present
+- [x] Gate 1 — 7 active verified leads
+- [x] Gate 2 — recency target + fallback explicit
+- [x] Gate 3 — WIH provenance satisfied
+- [x] Gate 4 — TS/Python enforcement satisfied
+- [x] Gate 5 — contact/apply paths complete
+- [x] Gate 6 — USD normalization complete
+- [x] Gate 7 — Top-3 + drafts + recommendation complete
+- [x] Gate 8 — gate-to-evidence table present
 
-## 4) Self-Audit Table — Gate → Evidence Location
+## 4) Self-Audit Table — Gate → Evidence
 | Gate | Requirement | Status | Evidence location |
 |---|---|---|---|
-| 0 | Artifact-first checkpoint links | ✅ | Task `githubUrls`; skeleton commits `6fefec2` (report), `42f6214` (CSV) |
-| 1 | 7–8 active verified leads | ✅ | `artifacts/lead_shortlist.csv` rows `HN-WIH-2026-001`..`007`; `active_status` column |
-| 2 | Recency validation | ✅ | `artifacts/lead_shortlist.csv` `posting_date_utc` (2026-02-02..2026-02-11); Section 5.1 in this report |
-| 3 | Feb 2026 WIH provenance >=5 | ✅ | `artifacts/lead_shortlist.csv` `hn_canonical_url` on all 7 rows (all Feb WIH thread) |
-| 4 | TS/Python fit enforcement | ✅ | `artifacts/lead_shortlist.csv` `ts_python_signal`; Section 5.2 enforcement map |
-| 5 | Contact/apply path per lead | ✅ | `artifacts/lead_shortlist.csv` `contact_or_apply_path` complete on all rows |
-| 6 | USD compensation normalization | ✅ | `artifacts/lead_shortlist.csv` `comp_usd_annual_min/max` + `annualization_method` |
-| 7 | Top-3 + drafts + recommendation | ✅ | Sections 7, 8, 9 in this report |
-| 8 | In-file gate mapping table | ✅ | Section 4 (this table) |
+| 0 | Repo/file/commit links in task | ✅ | Task `githubUrls` includes repo + blob links + latest commits |
+| 1 | 7–8 active verified leads; no placeholder rows | ✅ | `artifacts/lead_shortlist.csv` has exactly 7 rows (`HN-WIH-2026-001..007`) and no `TBD` entries |
+| 2 | Recency target + fallback evidence | ✅ | Section 5 below + `posting_date_utc` in CSV + strict-window fallback artifact |
+| 3 | >=5 leads from Feb WIH thread | ✅ | `hn_canonical_url` populated for all 7 leads (all from Feb WIH thread) |
+| 4 | TS/Python fit enforcement | ✅ | `ts_python_signal` complete for all 7 leads; Section 6 matrix |
+| 5 | Contact/apply per lead | ✅ | `contact_or_apply_path` complete for all 7 leads |
+| 6 | USD normalized compensation + method | ✅ | `comp_usd_annual_min/max` + `annualization_method` complete (with max-only note where applicable) |
+| 7 | Top-3 + drafts + recommendation | ✅ | Sections 8, 9, 10 |
+| 8 | Self-audit gate mapping in report | ✅ | Section 4 (this table) |
 
-## 5) Enforcement Notes
-### 5.1 Recency handling
-Inclusion policy for primary shortlist:
-1. Lead must be from Feb 2026 WIH thread context.
-2. Lead must be active at capture time (`active_status` indicates live post/page signal).
-3. Lead must be recent in-cycle.
+## 5) Recency Target and Fallback Evidence
+### Target window (strict): 2026-02-12 to 2026-02-15
+Evidence file: `artifacts/window_scan_2026-02-12_to_2026-02-15.csv`
+- Confirmed strict-window blocker: numeric compensation ranges for remote TS/Python engineering roles were not available in this narrow slice.
+- Best strict-window partial: Areto (qualitative compensation only; Canada-only remote constraint).
 
-Recency evidence from CSV:
+### Fallback window (executed): broader Feb 2026 WIH
+To satisfy lead-count and schema gates, the primary shortlist used broader February WIH coverage with explicit transparency.
+
+Recency values in final shortlist (`posting_date_utc`):
 - 2026-02-02: HN-WIH-2026-001, 002, 003, 005
 - 2026-02-03: HN-WIH-2026-004, 006
 - 2026-02-11: HN-WIH-2026-007
 
-### 5.2 TS/Python fit enforcement
-Rule: each retained lead must include explicit TypeScript and/or Python signal.
+## 6) TS/Python Fit Enforcement Matrix
+- HN-WIH-2026-001 (Goody): **TypeScript explicit; Python accepted backend**
+- HN-WIH-2026-002 (FetLife): **TypeScript present in stack context**
+- HN-WIH-2026-003 (Greenline): **TypeScript explicit**
+- HN-WIH-2026-004 (Reef): **Python explicit**
+- HN-WIH-2026-005 (Piq): **TypeScript + Python + AI agents explicit**
+- HN-WIH-2026-006 (Wolf): **TypeScript explicit**
+- HN-WIH-2026-007 (Wave): **Python backend explicit; TypeScript frontend in stack**
 
-Per-lead enforcement map:
-- HN-WIH-2026-001 (Goody): TypeScript explicit; Python accepted backend
-- HN-WIH-2026-002 (FetLife): TypeScript in stack context (infra role)
-- HN-WIH-2026-003 (Greenline): TypeScript explicit
-- HN-WIH-2026-004 (Reef): Python explicit
-- HN-WIH-2026-005 (Piq): TypeScript + Python explicit
-- HN-WIH-2026-006 (Wolf): TypeScript explicit
-- HN-WIH-2026-007 (Wave): Python explicit; TypeScript in stack context
-
-## 6) Final Primary Shortlist (7)
+## 7) Final Primary Shortlist (7 Active Verified Leads)
 1. **Goody** — Staff/Senior SWE — Remote Americas — TS explicit, Python accepted — $150k–$250k.
 2. **FetLife** — Senior DevOps Engineer — Remote — TS in stack context — $115k–$180k.
 3. **Greenline** — Founding Engineer (Backend+Data) — Remote US — TypeScript monorepo — $175k–$225k.
 4. **Reef Technologies** — Senior Python Backend Engineer — Fully remote — $45–70/hr annualized to $93.6k–$145.6k.
 5. **Piq Energy** — Full Stack Software Engineer — US Remote/SF/Athens — TS+Python+AI agents — $150k–$250k.
 6. **Wolf Games** — Software Engineer (AI Web Game) — Fully remote US — TS — $45–55/hr annualized to $93.6k–$114.4k.
-7. **Wave** — Applied AI Engineer — Remote with country hubs — Python backend + TS frontend stack — up to $222,700.
+7. **Wave** — Applied AI Engineer — Remote hubs — Python backend + TS frontend — up to $222,700.
 
-## 7) Top-3 Prioritized Targets
+## 8) Top-3 Prioritized Targets
 ### #1 Wave — Applied AI Engineer
-- Direct AI-agent relevance and production-scale interaction footprint.
-- Strong Python backend fit.
-- High compensation ceiling.
+- Highest direct fit for Python + production AI-agent systems.
+- Large-scale real-world deployment context.
+- Strong compensation ceiling.
 
 ### #2 Piq Energy — Full Stack Software Engineer
-- Explicit TS + Python + AI agent stack in-role.
-- Full lifecycle product ownership fit.
-- Strong compensation range.
+- Explicit TS/Python/AI-agent stack.
+- End-to-end product ownership scope.
+- Strong pay band.
 
-### #3 Goody — Staff/Senior SWE
-- Strong TS delivery alignment with Python flexibility.
-- Multiple openings + direct leadership contact path.
-- High salary band.
+### #3 Goody — Staff/Senior Software Engineer
+- Strong TS execution fit with Python flexibility.
+- Multiple role lanes + direct contact path.
+- Attractive compensation range.
 
-## 8) Outreach Drafts (Top-3)
+## 9) Outreach Drafts (Top-3)
 ### Draft A — Wave
 Subject: Applied AI Engineer (HN Feb WIH) — Python + agent systems
 
@@ -133,26 +137,19 @@ Happy to share concise examples of recent TS/Python systems and outcomes.
 Best,  
 [Name]
 
-## 9) Recommendation
+## 10) Recommendation
 **Recommendation: CONTINUE**
 
-Execution plan:
-1. Submit top-3 immediately (Wave, Piq, Goody).
-2. Submit Greenline and Reef as near-parallel alternates.
-3. Keep FetLife/Wolf as conditional options depending on role preference (DevOps and contract-to-hire).
+Execution sequence:
+1. Apply immediately to Wave, Piq, Goody.
+2. Follow with Greenline + Reef as near-parallel alternates.
+3. Keep FetLife/Wolf as conditional based on preference (infra/game contract track).
 
-## 10) Feasibility Note — Strict 12–15 Feb Slice
-Sage feeder evidence (`nrm5CuBN7Q5drmiNF2eQw`, report `ZxiI9jio6LQ2RS_gSMICR`) is persisted in `artifacts/window_scan_2026-02-12_to_2026-02-15.csv`.
-
-In that narrow slice, only Areto had remote + compensation text + Python signal, but compensation was non-numeric and remote was Canada-only. Therefore, the primary 7-lead package uses broader Feb 2026 WIH coverage to meet gate volume and schema requirements while retaining strict-slice transparency.
-
-## 11) Evidence-Gap Section (Feeder Timeout Rule)
-**Rule used:** if feeder is delayed beyond 30 minutes, proceed with available verified data and log gaps explicitly.
-
-Current status in this cycle:
-- No blocking feeder delay at finalization time; package completed from verified in-repo and persisted feeder artifacts.
-- Residual evidence gap (market/data, not process): strict 12–15 Feb slice lacks numeric compensation for remote TS/Python engineering leads.
-- Impact: primary deliverable is satisfied using broader Feb 2026 WIH scope; strict-slice artifact retained for transparency.
+## 11) Evidence Gap (Explicitly Labeled)
+- **Data gap:** strict 12–15 Feb slice does not provide numeric compensation ranges for remote TS/Python engineering leads.
+- **Consequence:** strict-window-only package would fail gate volume + normalization strictness.
+- **Mitigation:** retain strict-window artifact for transparency and use broader Feb WIH fallback for final compliant package.
 
 ---
-All 9 gates are evidenced in-file and linked to committed artifacts. Status intentionally remains `in_progress` pending explicit instruction to move `review`.
+Final package is fully populated (no placeholders), with all 9 gates evidenced and cross-referenced.
+Status intentionally remains `in_progress` until explicit approval to move `review`.
