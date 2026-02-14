@@ -1,0 +1,11 @@
+claim_ref,source_url,status,submitted_date,apparent_scope,signal_strength,notes
+CLM-001,https://algora.io/claims/6bdZBHqmWqedLz2A,pending,2026-02-10,Debian13 docker fallback + unit test,high,Directly references #8154
+CLM-002,https://algora.io/claims/NF7kbq3WSHyfX7oY,pending,2026-02-08,Debian13 + Alpine prerequisite handling,high,Includes /claim #8154 and PR #8206
+CLM-003,https://algora.io/claims/Bzbgw8GnsU3EEi7v,unknown,unknown,Debian13 validation + Alpine support,medium,Search indexed claim page text
+CLM-004,https://algora.io/claims/Xj61oSmiEDbDmDQV,unknown,unknown,Debian13 support implementation,medium,Search indexed claim page text
+CLM-005,https://algora.io/claims/SKBv3mepdpZDf3if,unknown,unknown,Debian codename fallback + Alpine handlers,medium,Search indexed claim page text
+CLM-006,https://algora.io/claims/gDd5fFcHEbB55D6p,unknown,unknown,Full Debian13 and Alpine support,medium,Search indexed claim page text
+CLM-007,https://algora.io/claims/Uy3k3LeD9xdu8SuJ,unknown,unknown,Dynamic Docker repo fallback + Alpine support,medium,Search indexed claim page text
+CLM-008,https://algora.io/claims/kiJEW3iPs954JqnE,unknown,unknown,Debian13 support patch,medium,Search indexed claim page text
+CLM-009,https://algora.io/claims/tiokpEL6FSKEXMcd,unknown,unknown,Debian docker repo fallback test-focused,medium,Search indexed claim page text
+CLM-010,https://algora.io/claims/YXv5SHqY7BadKAzi,unknown,unknown,Debian13 + Alpine prerequisites,medium,Search indexed claim page text
